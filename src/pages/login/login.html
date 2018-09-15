@@ -1,5 +1,5 @@
 
-<ion-header>
+<ion-header text-center>
 
   <ion-navbar>
     <ion-title>login</ion-title>
@@ -8,18 +8,25 @@
 </ion-header>
 
 
-<ion-content padding>
-    <ion-list>
+<ion-content text-center padding>
+    <ion-img
+  
+    width="400" 
+    height="400" 
+    src="./assets/images/isura.jpg">
+    
+  </ion-img>
+  
+    <ion-list >
         <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text" #username></ion-input>
+            <ion-label floating>User Name</ion-label>
+          <ion-input required type="text" aria-placeholder="User Name" ></ion-input>
         </ion-item>
-      
-        <ion-item>
+        <ion-item> 
           <ion-label floating>Password</ion-label>
-          <ion-input type="password" #password></ion-input>
+          <ion-input required type="password" aria-placeholder="Password" ></ion-input>
         </ion-item>
-      
-        </ion-list>
+      </ion-list>
+      <button ion-button block color="primary" (click)="login()">Log In</button>
 
 </ion-content>
