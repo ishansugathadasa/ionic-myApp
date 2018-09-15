@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-img width="80" height="80" src="assets/imgs/image1.jpg"></ion-img>
+  <ion-list>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<div padding>
+  <button ion-button color="secondary" round (click)="register()">Register</button>
+</div>
+
+<div padding>
+  <button ion-button color="secondary" round (click)="signIn()">Sign In</button>
+</div>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "pm-ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
