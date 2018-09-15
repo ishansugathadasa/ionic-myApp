@@ -8,18 +8,20 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-slides autoplay="3000" pager>
+  <button ion-button (click)="onGoToLogin()">login</button>
+  <button ion-button (click)="onGoToRegister()">Register</button>
+     <ion-slides autoplay="2000" pager>
       <ion-slide>
-        <img src="http://placehold.it/300*150" />
+        <img src="./assets/images/isura.jpg" />
       </ion-slide>
       <ion-slide>
-          <img src="http://placehold.it/300*150" />
+          <img src="./assets/images/pharma1.jpg" />
         </ion-slide>
         <ion-slide>
-            <img src="http://placehold.it/300*150" />
+            <img src="./assets/images/pharma2.jpg" />
           </ion-slide>
           <ion-slide>
-              <img src="http://placehold.it/300*150" />
+              <img src="./assets/images/pharma3.jpg" />
             </ion-slide>
 
     </ion-slides>
