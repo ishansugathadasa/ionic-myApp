@@ -14,5 +14,44 @@
 
 
 <ion-content padding>
+	<ion-img width="80" height="80" src="./assets/images/isura.jpg"></ion-img>
+  <ion-list>
+	<ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Mobile Number</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Email</ion-label>
+    <ion-input type="text" #username></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label floating>Confirm Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+ 
+  <ion-checkbox color="dark" checked="true" align="right"></ion-checkbox>
+  <a class = "link" href="https:/www.health-ni.gov.uk/articles/about-pharmacy-and-medicines-policy" >I Aggre to the Company Term of Use</a>
+
+  
+
+	</ion-list>
+
+	<div padding>
+	  
+	   <button ion-button (click)="onGoToRegister()">Register</button>
+	</div>
 
 </ion-content>
