@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angul
 
 import {RegisterPage} from '../register/register';
 import { HomePage } from '../home/home';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 
 /**
@@ -19,8 +20,14 @@ import { HomePage } from '../home/home';
 })
 export class RegisterPage {
 	
+	
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  	
+  	
+
+  	
   }
 
  
