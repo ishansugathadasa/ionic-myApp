@@ -25,9 +25,9 @@ export class RegisterPage {
 }
 
  
-  onGoToRegister(){
+ /* onGoToRegister(){
     this.navCtrl.push();
-  }
+  }*/
 
   
 
