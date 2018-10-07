@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header text-center>
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
@@ -8,7 +8,10 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button (click)="onGoToLogin()">login</button>
+    <ion-toolbar>
+        <ion-searchbar></ion-searchbar>
+      </ion-toolbar>
+  <button ion-button (click)="onGoToLogin()">login </button>
   <button ion-button (click)="onGoToRegister()">Register</button>
      <ion-slides autoplay="2000" pager>
       <ion-slide>
@@ -25,6 +28,7 @@
             </ion-slide>
 
     </ion-slides>
+   
 
 
 </ion-content>

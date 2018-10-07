@@ -1,9 +1,18 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
+<<<<<<< HEAD
 import { HomePage } from '../home/home';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 
+=======
+
+
+import { HomePage } from '../home/home';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
+
+>>>>>>> origin/ishan
 /**
  * Generated class for the RegisterPage page.
  *
@@ -21,6 +30,7 @@ export class RegisterPage {
 	
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+<<<<<<< HEAD
 
 }
 
@@ -28,6 +38,21 @@ export class RegisterPage {
  /* onGoToRegister(){
     this.navCtrl.push();
   }*/
+
+  
+=======
+
+  	
+  	
+
+  	
+  }
+
+ 
+  onGoToRegister(){
+    this.navCtrl.push(HomePage);
+  }
+>>>>>>> origin/ishan
 
   
 
