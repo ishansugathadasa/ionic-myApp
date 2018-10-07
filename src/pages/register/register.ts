@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
 
-import {  } from '../home/home';
+import { HomePage } from '../home/home';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 
