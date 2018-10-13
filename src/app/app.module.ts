@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { Camera } from '@ionic-native/camera';
 
 
 
@@ -42,7 +43,7 @@ import { RegisterPage } from '../pages/register/register';
   ],
   providers: [
     StatusBar,
-    SplashScreen,
+    SplashScreen,Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angul
 
 import { HomePage } from '../home/home';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Camera , CameraOptions } from '@ionic-native/camera';
 
 
 
@@ -20,9 +21,10 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class RegisterPage {
 	
+	myphoto:any;
 	
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private camera:Camera) {
 
 
 }
@@ -35,6 +37,23 @@ export class RegisterPage {
  
   onGoToRegister(){
     this.navCtrl.push(HomePage);
+  }
+
+  takephoto(){
+  	const options: CameraOptions = {
+	  quality: 70,
+	  destinationType: this.camera.DestinationType.FILE_URI,
+	  encodingType: this.camera.EncodingType.JPEG,
+	  mediaType: this.camera.MediaType.PICTURE
+	}
+
+	this.camera.getPicture(options).then((imageData) => {
+	 // imageData is either a base64 encoded string or a file URI
+	 // If it's base64 (DATA_URL):
+	 this.myphoto = 'data:image/jpeg;base64,' + imageData;
+	}, (err) => {
+	 // Handle error
+	});
   }
 
 
