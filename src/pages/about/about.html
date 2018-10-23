@@ -8,4 +8,72 @@
 
 <ion-content padding>
 
+
+
+	<ion-grid>
+        <ion-row>
+        	<ion-col col-12 col-md-8 col-lg-6 padding-horizontal>
+                <div *ngIf="!hideForm">
+                    <form [formGroup]="form" (ngSubmit)="register()">
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Usename <span class="red">*</span> </ion-label>
+                            <ion-input type="text" formControlName="username" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Mobile<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="mobile" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Email<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="email" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Password<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="password" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Confirm Password<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="confirmpassword" class="padding-left-5"></ion-input>
+                        </ion-item>
+                       <!-- <ion-list radio-group formControlName="jk">
+                            <ion-list-header class="padding-left-0">
+                                Email <span class="red">*</span>
+                            </ion-list-header>
+
+                            <ion-item class="padding-left-5">
+                                <ion-label>Laki-Laki</ion-label>
+                                <ion-radio value="Laki-Laki"></ion-radio>
+                            </ion-item>
+
+                            <ion-item class="padding-left-5">
+                                <ion-label>Perempuan</ion-label>
+                                <ion-radio value="Perempuan"></ion-radio>
+                            </ion-item>
+                        </ion-list>  -->
+                        <!--<ion-list>
+                            <ion-list-header class="padding-left-0">
+                                Hobi
+                            </ion-list-header>
+
+                            <ion-item class="padding-left-5">
+                                <ion-label>Coding</ion-label>
+                                <ion-checkbox [(ngModel)]="biodataHobi1" formControlName="hobi1" (ionChange)="updateHobi1()"></ion-checkbox>
+                            </ion-item>
+
+                            <ion-item class="padding-left-5">
+                                <ion-label>Membaca</ion-label>
+                                <ion-checkbox [(ngModel)]="biodataHobi2" formControlName="hobi2" (ionChange)="updateHobi2()"></ion-checkbox>
+                            </ion-item>
+
+                            <ion-item class="padding-left-5">
+                                <ion-label>Renang</ion-label>
+                                <ion-checkbox [(ngModel)]="biodataHobi3" formControlName="hobi3" (ionChange)="updateHobi3()"></ion-checkbox>
+                            </ion-item>
+                        </ion-list> -->
+                        <button  ion-button block [disabled]="!form.valid" color="secondary">Register</button>
+                    </form>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>

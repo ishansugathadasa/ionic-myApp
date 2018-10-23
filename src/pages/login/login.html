@@ -11,8 +11,8 @@
 <ion-content text-center padding>
     <ion-img
   
-    width="400" 
-    height="400" 
+    width="80" 
+    height="80" 
     src="./assets/images/isura.jpg">
     
   </ion-img>
@@ -27,6 +27,14 @@
           <ion-input required type="password" aria-placeholder="Password" ></ion-input>
         </ion-item>
       </ion-list>
-      <button ion-button block color="primary" (click)="login()">Log In</button>
+      <button ion-button color="primary" (click)="login()">SIGN In</button>
+
+      <p>Don't have an account?</p>
+
+      <button ion-button (click)="onGoToRegister()">Register</button>
+
+
+      
+
 
 </ion-content>

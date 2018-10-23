@@ -28,7 +28,36 @@
             </ion-slide>
 
     </ion-slides>
-   
+ 
 
 
 </ion-content>
+
+//start menu
+ <ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Do more with your account</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <button ion-item (click)="openPage1(homePage)">
+        Home
+      </button>
+      <button ion-item (click)="openPage2(camera)">
+        Upload Photo
+      </button>
+      <button ion-item (click)="openPage3(eventsPage)">
+        Events
+      </button>
+      <button ion-item (click)="closeMenu()">
+        Close Menu
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+//end menu 
+

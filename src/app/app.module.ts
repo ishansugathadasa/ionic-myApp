@@ -13,6 +13,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 import { Camera } from '@ionic-native/camera';
+import { CameraPage } from '../pages/camera/camera';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
+import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
+import { File } from '@ionic-native/file';
+import { HttpClientModule } from '@angular/common/http'; // import HttpClientModule
+
+
 
 
 
@@ -24,11 +32,14 @@ import { Camera } from '@ionic-native/camera';
     HomePage,
     TabsPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    CameraPage
+    
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HttpClientModule // HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -38,13 +49,18 @@ import { Camera } from '@ionic-native/camera';
     HomePage,
     TabsPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    CameraPage
 
   ],
   providers: [
     StatusBar,
-    SplashScreen,Camera,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    SplashScreen,
+    Camera,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FileTransfer,
+    //FileUploadOptions,
+    FileTransferObject
   ]
 })
 export class AppModule {}
