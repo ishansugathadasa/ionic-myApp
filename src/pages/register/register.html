@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content padding text-center>
+<!-- <ion-content padding text-center>
 	<ion-img width="70" height="80" src="./assets/images/isura.jpg"></ion-img>
   <ion-list>
  
@@ -66,8 +66,44 @@
    
 
 
+</ion-content>-->
+
+<ion-content padding>
+
+
+
+  <ion-grid>
+        <ion-row>
+          <ion-col col-12 col-md-8 col-lg-6 padding-horizontal>
+                <div *ngIf="!hideForm">
+                    <form [formGroup]="form" (ngSubmit)="register()">
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Usename <span class="red">*</span> </ion-label>
+                            <ion-input type="text" formControlName="username" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Mobile<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="mobile" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Email<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="email" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Password<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="password" class="padding-left-5"></ion-input>
+                        </ion-item>
+                        <ion-item class="padding-left-0">
+                            <ion-label stacked>Confirm Password<span class="red">*</span></ion-label>
+                            <ion-input type="text" formControlName="confirmpassword" class="padding-left-5"></ion-input>
+                        </ion-item>
+
+                        <button  ion-button block [disabled]="!form.valid" color="secondary">Register</button>
+                    </form>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 </ion-content>
-
-
 
     
