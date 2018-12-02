@@ -44,6 +44,7 @@
                 $stmt->bindParam(':password', $password, PDO::PARAM_STR);
                 $stmt->bindParam(':confirmpassword', $confirmpassword, PDO::PARAM_STR);
                
+                
                 $stmt->execute();
 
                 echo json_encode(array('message' => 'Data '.$username.' telah disimpan'));

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams,AlertController , ToastController} from 'ionic-angular';
 
 import { HomePage } from '../home/home';
-import { FormBuilder, FormGroup } from '@angular/forms';
+//import { FormBuilder, FormGroup } from '@angular/forms';
 import { AboutPage } from '../about/about';
 
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
@@ -53,7 +53,7 @@ export class RegisterPage {
   }
 
  onGoToRegister(){
-    this.navCtrl.push(AboutPage);
+    this.navCtrl.push(HomePage);
   }
 
 

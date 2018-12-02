@@ -98,7 +98,7 @@
                             <ion-input type="text" formControlName="confirmpassword" class="padding-left-5"></ion-input>
                         </ion-item>
 
-                        <button  ion-button block [disabled]="!form.valid" color="secondary">Register</button>
+                        <button  ion-button block [disabled]="!form.valid" color="secondary"(click)="onGoToRegister()">Register</button>
                     </form>
                 </div>
             </ion-col>

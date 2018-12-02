@@ -20,7 +20,7 @@ import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-nati
 import { File } from '@ionic-native/file';
 import { HttpClientModule } from '@angular/common/http'; // import HttpClientModule
 
-
+import { WelcomePage } from '../pages/welcome/welcome';
 
 
 
@@ -33,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http'; // import HttpClientMod
     TabsPage,
     LoginPage,
     RegisterPage,
-    CameraPage
+    CameraPage,
+    WelcomePage
     
   ],
   imports: [
@@ -50,7 +51,8 @@ import { HttpClientModule } from '@angular/common/http'; // import HttpClientMod
     TabsPage,
     LoginPage,
     RegisterPage,
-    CameraPage
+    CameraPage,
+   WelcomePage
 
   ],
   providers: [
