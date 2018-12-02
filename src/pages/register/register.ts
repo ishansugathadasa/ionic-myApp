@@ -8,6 +8,8 @@ import { AboutPage } from '../about/about';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { TabsPage } from '../tabs/tabs';
+
 
 
 
@@ -53,7 +55,7 @@ export class RegisterPage {
   }
 
  onGoToRegister(){
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(TabsPage);
   }
 
 

@@ -10,9 +10,10 @@
 <ion-content padding>
     <ion-toolbar>
         <ion-searchbar></ion-searchbar>
-      </ion-toolbar>
-  <button ion-button (click)="onGoToLogin()">login </button>
-  <button ion-button (click)="onGoToRegister()">Register</button>
+    </ion-toolbar>
+      <button ion-button (click)="onGoToLogin()">login </button>
+      <button ion-button (click)="onGoToRegister()">Register</button>
+      <button ion-button (click)="onGoTologout()">Logout</button>
      <ion-slides autoplay="2000" pager>
       <ion-slide>
         <img src="./assets/images/isura.jpg" />
@@ -28,12 +29,8 @@
             </ion-slide>
 
     </ion-slides>
- 
 
-
-</ion-content>
-
-//start menu
+    //start menu
  <ion-menu [content]="content">
   <ion-header>
     <ion-toolbar>
@@ -59,5 +56,14 @@
 </ion-menu>
 
 <ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+
+
 //end menu 
+
+ 
+
+
+</ion-content>
+
+
 

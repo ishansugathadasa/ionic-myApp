@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { RegisterPage } from '../register/register';
 import { CameraPage } from '../camera/camera';
+import { WelcomePage } from '../welcome/welcome';
 
 
 
@@ -26,6 +27,10 @@ export class HomePage {
   }
   openPage2(camera){
     this.navCtrl.push(CameraPage);
+  }
+
+  onGoTologout(){
+    this.navCtrl.push(WelcomePage);
   }
 
   
